@@ -1,0 +1,219 @@
+*{
+    font-family:Century Gothic;
+}
+
+body{
+    background-color: #ededed;
+}
+
+/* Header logo de alura*/
+header{
+    
+    padding: 25px;
+    display: inline;
+}
+
+
+/*Main input */
+
+#home{
+    
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.InputText textarea{
+    width: 80%;
+    height: 80%;
+}
+
+
+#textocifrado{
+    border: none;
+    outline: none;
+    background: #ededed;
+    font-size: 30px;
+    color: #0A3871;
+    margin: 50px 50px 0  50px;
+    
+}
+
+.InputText ::placeholder{
+    color: #0A3871;
+
+}
+
+/*botones de encriptar y desencriptar*/
+
+.botones{
+   text-align: center;
+   width: 100%;
+}
+
+.textoAdvertencia{
+    padding: 0 0 0 15px;
+    margin-left: 15px;
+}
+
+#botonEncriptador{
+    width: 45%;
+    font-size: 20px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    transition: 1s all;
+    margin: 15px ;
+}
+
+#botonEncriptador:hover{
+    transform: scale(1.05);
+}
+
+
+#botonDesencriptador{
+    width: 45%;
+    font-size: 20px;
+    background: white;
+    border-radius: 24px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 15px;
+    transition: 1s all;
+    
+}
+
+#botonDesencriptador:hover{
+    transform: scale(1.05);  
+}
+
+/*Main caja encriptadora */
+
+
+#home .cajaencriptadora{
+    width: 400px;
+    height: 700px;
+    background: white;
+    border-radius: 32px; 
+    display: flex;
+    text-align: center;
+    place-items: center;
+    
+}
+
+#textodesencriptado{
+   border: none;
+   outline: none;
+   display: none; 
+   padding: 10px;
+   width: 80%;
+   height: 500px;
+   font-size: 20px;
+   color: black;
+   
+}
+
+
+
+#TextoCaja h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+
+}
+
+
+#botoncopiar{
+    
+    display: none;
+    width: 45%;
+    font-size: 20px;
+    background: white;
+    border-radius: 24px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 15px;
+    transition: 1s all;
+    margin: 10px;
+       
+}
+
+#botoncopiar{
+    transform: scale(1.05);
+}
+
+
+
+/*Responsive*/
+@media(max-width: 800px){
+    #home{
+        flex-direction: column;
+    }
+   
+    .InputText textarea{
+        width: 80%;
+        height: 400px;
+    }
+
+    .botones{
+        margin:0 ;
+        text-align: center;
+       
+    }
+
+    #home .cajaencriptadora{
+        width: 80%;
+        height: 20%;
+        background: white;    
+        border-radius: 32px;  
+        margin: 20px;   
+        padding: 5px 50px; 
+        
+        
+    }
+
+    #textodesencriptado{
+        
+        width: 90%;
+       
+    }
+
+    .cajaencriptadora img{
+        display: none;
+    }
+
+    #TextoCaja{
+        padding: 10px;
+        font-size: auto;
+        text-align: center;
+
+    }
+
+    
+
+
+
+   
+
+    
+}
+
+@media(max-width: 450px){
+
+    #botonEncriptador{
+        width: 100%;
+        margin: 0 0 15px ;
+    }
+    #botonDesencriptador{
+        width: 100%;
+    }
+    
+
+}
+
